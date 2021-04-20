@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uet.tsfbankingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash_image"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/splash_image"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Transaction.TransactionHistoryActivity"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelectUser.SelectUsersActivity" />
+        <activity android:name=".SingleUserActivity" />
+        <activity android:name=".AddUser" />
+        <activity android:name=".AllUsers.AllUsersActivity" />
+        <activity
+            android:name=".LogInActivity"
+            android:theme="@style/FullScreen" />
+    </application>
+
+</manifest>

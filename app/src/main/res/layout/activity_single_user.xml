@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleUserActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user_image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/profile_image"
+        android:id="@+id/account_no_text"
+        android:text="Account No:"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_no_text"
+        android:id="@+id/account_no"
+        android:text="xxxxxxxxxxxxx"
+        android:textSize="16dp"
+        android:background="@drawable/simple_border"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_no"
+        android:id="@+id/username_text"
+        android:text="User Name:"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_text"
+        android:id="@+id/username"
+        android:text="Asad"
+        android:textSize="16dp"
+        android:background="@drawable/simple_border"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:id="@+id/useremail_text"
+        android:text="User Email:"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/useremail_text"
+        android:id="@+id/useremail"
+        android:text="abc@gmail.com"
+        android:textSize="16dp"
+        android:background="@drawable/simple_border"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/useremail"
+        android:id="@+id/amount"
+        android:text="Amount: $200000"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount"
+        android:id="@+id/transfer_btn"
+        android:layout_marginTop="40dp"
+        android:text="Transfer"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner_round_background"/>
+
+</RelativeLayout>

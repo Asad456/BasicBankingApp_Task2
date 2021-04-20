@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".SelectUser.SelectUsersActivity">
+
+    <include
+        layout="@layout/bar_layout_fill"
+        android:id="@+id/app_bar_layout">
+    </include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/bottom_layout"
+        android:id="@+id/user_list"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/enter_amount"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:layout_toLeftOf="@+id/confirm_btn"
+            android:hint="Enter Amount"
+            android:background="@drawable/round_button"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/confirm_btn"
+            android:background="@drawable/tick"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

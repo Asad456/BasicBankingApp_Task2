@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shadowColor="#000"
+    android:shadowDx="0"
+    android:shadowDy="30"
+    android:shadowRadius="50"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+        card_view:cardCornerRadius="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_layout"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/from"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:text="From: Asad"
+                android:textSize="14dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@android:color/black"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/to"
+                android:layout_below="@+id/from"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="To: Ali"
+                android:textSize="14dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount"
+                android:layout_below="@id/to"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Amount: 1000$"
+                android:textSize="14dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_time"
+                android:layout_below="@+id/amount"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="April 4,2021 12:5am"
+                android:textSize="14dp"
+                android:textColor="@android:color/darker_gray"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
